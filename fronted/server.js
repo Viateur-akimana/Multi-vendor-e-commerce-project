@@ -1,0 +1,1 @@
+export const server ='http://localhost:3000/apis/v2/user/create-user';
