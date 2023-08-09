@@ -17,22 +17,26 @@ const Signup = () => {
     const file = e.target.files[0];
     setAvatar(URL.createObjectURL(file));
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const config = { headers: { "Content-Type": "multipart/form-data" } };
     const newform = new FormData();
     newform.append("file", avatar);
     newform.append("firstname", firstname);
-    newform.append("lastname",lastname)
+    newform.append("lastname", lastname);
     newform.append("email", email);
     newform.append("password", password);
     axios
       .post(`${server}`, newform, config)
       .then((res) => {
-        console.log(res).catch((err) => {
-          console.log(err.message);
-        });
+        toast.success(res.data.message);
+        // setFirstname(""), setEmail(""), setPassword(""), setAvatar();
+      //
+     })
+      .catch((error) => {
+        console.log(error.res.data.message);
+        toast.error("error!");
       });
   };
   return (
