@@ -1,6 +1,6 @@
 import React from 'react'
-import AdminHeader from '../components/Layout/AdminHeader'
-import AdminSideBar from '../components/Admin/Layout/AdminSideBar'
+import AdminHeader from '../components/Layout/AdminHeader.jsx'
+import AdminSideBar from '../components/Admin/Layout/AdminSideBar.jsx'
 import AllUsers from "../components/Admin/AllUsers";
 
 const AdminDashboardUsers = () => {

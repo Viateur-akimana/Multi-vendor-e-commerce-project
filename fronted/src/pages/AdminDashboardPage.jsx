@@ -1,7 +1,7 @@
 import React from "react";
-import AdminHeader from "../components/Layout/AdminHeader";
-import AdminSideBar from "../components/Admin/Layout/AdminSideBar";
-import AdminDashboardMain from "../components/Admin/AdminDashboardMain";
+import AdminHeader from "../components/Layout/AdminHeader.jsx";
+import AdminSideBar from "../components/Admin/Layout/AdminSideBar.jsx";
+import AdminDashboardMain from "../components/Admin/AdminDashboardMain.jsx/index.js";
 
 const AdminDashboardPage = () => {
   return (

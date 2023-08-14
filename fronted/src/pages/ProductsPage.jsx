@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
-import Loader from "../components/Layout/Loader";
+import Loader from "../components/Layout/Loader.jsx";
 import ProductCard from "../components/components/Layout/route/ProductCard/ProductCard";
 import styles from "../styles/styles";
 

@@ -5,7 +5,7 @@ import Header from "../components/Layout/Header";
 import Loader from "../components/Layout/Loader";
 import ProductCard from "../components/components/Layout/route/ProductCard/ProductCard";
 import styles from "../styles/styles";
-import Footer from "../components/Layout/Footer";
+import Footer from "../components/Layout/Footer.jsx";
 
 const BestSellingPage = () => {
   const [data, setData] = useState([]);
